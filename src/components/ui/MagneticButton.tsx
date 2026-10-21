@@ -26,8 +26,8 @@ export function MagneticButton({
     'group relative inline-flex min-h-11 items-center gap-3 overflow-hidden rounded-full px-8 py-3.5 text-sm font-medium tracking-wide transition-all duration-300 will-change-transform focus-visible:outline-2'
   const styles =
     variant === 'solid'
-      ? 'shimmer bg-accent text-bg shadow-[0_0_0_1px_rgba(212,176,106,0.35),0_8px_32px_-8px_rgba(212,176,106,0.35)] hover:bg-accent-press hover:shadow-[0_0_40px_-8px_rgba(212,176,106,0.55),0_12px_48px_-8px_rgba(212,176,106,0.45)]'
-      : 'gold-border border border-line-strong text-text hover:border-accent hover:text-accent hover:bg-white/[0.03]'
+      ? 'shimmer bg-accent text-bg shadow-[0_0_0_1px_rgba(83,224,194,0.35),0_8px_32px_-8px_rgba(83,224,194,0.25)] hover:bg-accent-press hover:shadow-[0_0_40px_-8px_rgba(83,224,194,0.45),0_12px_48px_-8px_rgba(83,224,194,0.35)]'
+      : 'accent-border border border-line-strong text-text hover:border-accent hover:text-accent hover:bg-white/[0.03]'
 
   const content = (
     <>

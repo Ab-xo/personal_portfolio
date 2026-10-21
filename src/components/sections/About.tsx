@@ -39,6 +39,40 @@ export function About() {
           ))}
         </dl>
       </div>
+
+      <div className="mt-20 grid gap-14 border-t border-line pt-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div>
+          <h3 className="mono-label uppercase text-accent">Education</h3>
+          <ol className="mt-6 divide-y divide-line">
+            {about.education.map((item) => (
+              <li key={item.qualification} className="py-6 first:pt-0 last:pb-0">
+                <h4 className="font-display text-2xl">{item.qualification}</h4>
+                <p className="mt-2 text-sm text-text">{item.institution}</p>
+                <p className="mt-1 text-sm text-muted">{item.detail}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div className="grid content-start gap-10 sm:grid-cols-2 lg:grid-cols-1">
+          <div>
+            <h3 className="mono-label uppercase text-accent">Languages</h3>
+            <p className="mt-4 text-text">{about.languages.join(' · ')}</p>
+          </div>
+          <div>
+            <h3 className="mono-label uppercase text-accent">Tools</h3>
+            <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
+              {about.tools.map((tool) => (
+                <li key={tool} className="text-sm text-muted">{tool}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h3 className="mono-label uppercase text-accent">Outside work</h3>
+            <p className="mt-4 text-sm text-muted">{about.interests.join(' · ')}</p>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

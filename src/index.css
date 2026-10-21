@@ -4,21 +4,19 @@
 
 @import 'tailwindcss';
 
-/* ------------------------------------------------------------------
-   Premium editorial tokens — OLED dark, warm ivory, one champagne gold.
-   ui-ux-pro-max: exaggerated minimalism + editorial grid + OLED dark.
------------------------------------------------------------------- */
+/* Portfolio tokens: ink, soft ivory, teal, and warm coral. */
 @theme {
-  --color-bg: #050506;
-  --color-surface: #0c0c0e;
-  --color-surface-2: #131316;
-  --color-line: rgba(244, 239, 230, 0.08);
-  --color-line-strong: rgba(244, 239, 230, 0.16);
-  --color-text: #f4efe6;
-  --color-muted: #9a9388;
-  --color-faint: #5c574f;
-  --color-accent: #d4b06a;
-  --color-accent-press: #c49a48;
+  --color-bg: #070b0b;
+  --color-surface: #101716;
+  --color-surface-2: #18211f;
+  --color-line: rgba(237, 244, 238, 0.09);
+  --color-line-strong: rgba(237, 244, 238, 0.18);
+  --color-text: #f3f5ef;
+  --color-muted: #a2aea7;
+  --color-faint: #68746e;
+  --color-accent: #53e0c2;
+  --color-accent-press: #35c9aa;
+  --color-coral: #e6a77a;
 
   --font-display: 'Instrument Serif', ui-serif, Georgia, serif;
   --font-sans: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
@@ -167,11 +165,11 @@
   }
 
   /* Gradient hairline border (drawn via mask so corners stay sharp). */
-  .gold-border {
+  .accent-border {
     position: relative;
   }
 
-  .gold-border::before {
+  .accent-border::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -179,8 +177,8 @@
     padding: 1px;
     background: linear-gradient(
       160deg,
-      rgba(212, 176, 106, 0.55),
-      rgba(212, 176, 106, 0.08) 40%,
+      rgba(83, 224, 194, 0.55),
+      rgba(83, 224, 194, 0.08) 40%,
       transparent 70%
     );
     -webkit-mask:
@@ -193,7 +191,7 @@
     pointer-events: none;
   }
 
-  .gold-border:hover::before {
+  .accent-border:hover::before {
     opacity: 1;
   }
 
@@ -205,8 +203,8 @@
     pointer-events: none;
   }
 
-  .text-gradient-gold {
-    background: linear-gradient(115deg, var(--color-text) 40%, var(--color-accent) 70%, var(--color-text) 95%);
+  .text-gradient-accent {
+    background: linear-gradient(115deg, var(--color-text) 40%, var(--color-accent) 70%, var(--color-coral) 95%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

@@ -1,8 +1,5 @@
-// -----------------------------------------------------------------------------
-// PROJECTS — realistic placeholders. TODO: replace with Abraham's real work.
-// `featured` projects get a full case-study treatment; all appear in the
-// horizontal Selected Work gallery.
-// -----------------------------------------------------------------------------
+// Public portfolio projects. Descriptions and outcomes are grounded in the CV
+// and the linked repositories; no client or production claims are implied.
 
 export type Project = {
   id: string
@@ -14,70 +11,114 @@ export type Project = {
   description: string
   tech: string[]
   outcome: string
-  href?: string // TODO: real case-study / live link
+  href: string
+  demoHref?: string
   featured?: boolean
-  // Placeholder visual: a deterministic accent gradient angle for the panel.
   hue: number
 }
 
 export const projects: Project[] = [
   {
-    id: 'helix',
+    id: 'addis-ride',
     index: '01',
-    title: 'Helix',
-    category: 'Applied AI · Platform',
-    year: '2025',
-    role: 'Lead Engineer',
+    title: 'Addis Ride Forecast',
+    category: 'Data · Forecasting · Team project',
+    year: '2026',
+    role: 'Hackathon team member · 6-person team',
     description:
-      'A retrieval and reasoning platform that turns scattered internal knowledge into a single, citable answer surface for support teams.',
-    tech: ['TypeScript', 'Python', 'pgvector', 'React', 'GSAP'],
-    outcome: 'Cut median resolution time by 41% across 3 support orgs.',
-    href: '#', // TODO
+      'Hourly ride-demand forecasting across 12 Addis Ababa zones, with a LightGBM model and an interactive map-based demo.',
+    tech: ['Python', 'LightGBM', 'FastAPI', 'Next.js'],
+    outcome: 'Validation RMSE 8.09; 19% better than the seasonal-naive baseline.',
+    href: 'https://github.com/Ab-xo/addis_ride_forecast',
+    demoHref: 'https://teamdev-addisride.vercel.app/',
     featured: true,
     hue: 42,
   },
   {
-    id: 'atlas',
+    id: 'ak-drop',
     index: '02',
-    title: 'Atlas',
-    category: 'Agentic Systems',
-    year: '2025',
-    role: 'Founding Engineer',
+    title: 'AK Drop Commerce',
+    category: 'Full-stack · Commerce',
+    year: '2026',
+    role: 'Full-stack developer',
     description:
-      'An agent runtime that plans, calls tools, and self-checks its work — with deterministic fallbacks when confidence drops.',
-    tech: ['Python', 'LangGraph', 'Redis', 'Next.js'],
-    outcome: 'Automated 60% of a manual ops workflow with full audit trails.',
-    href: '#', // TODO
+      'A multi-category storefront with product discovery, persistent cart, accounts, order history, and an admin dashboard.',
+    tech: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Stripe test mode'],
+    outcome: 'Checkout uses test payments; shipping and fulfillment are not connected.',
+    href: 'https://github.com/Ab-xo/Ak-drop-Commerce-Platform',
+    demoHref: 'https://ak-drop-commerce.vercel.app/',
     featured: true,
-    hue: 38,
+    hue: 166,
   },
   {
-    id: 'prism',
+    id: 'coffee-guard',
     index: '03',
-    title: 'Prism',
-    category: 'Data Visualization',
-    year: '2024',
-    role: 'Design Engineer',
+    title: 'CoffeeGuard AI',
+    category: 'Applied ML · Computer vision · Team project',
+    year: '2026',
+    role: 'AI / ML engineer · team project',
     description:
-      'A real-time analytics canvas that renders millions of points at 60fps and lets teams query by dragging on the chart itself.',
-    tech: ['WebGL', 'three.js', 'DuckDB', 'React'],
-    outcome: 'Shipped as the default dashboard for 8k+ daily users.',
-    href: '#', // TODO
-    hue: 46,
+      'Coffee-leaf disease classification with confidence scores, visual explanations, robustness checks, and a deliberate uncertain-answer path.',
+    tech: ['Python', 'PyTorch', 'EfficientNetV2', 'FastAPI', 'Streamlit'],
+    outcome: 'Held-out macro-F1 0.974 (379 images); accuracy on the external BRACOL set is 0.63, so field performance needs more validation.',
+    href: 'https://github.com/Ab-xo/coffee-guard-ai',
+    hue: 158,
   },
   {
-    id: 'cadence',
+    id: 'etflix',
     index: '04',
-    title: 'Cadence',
-    category: 'Developer Tooling',
-    year: '2024',
-    role: 'Creator',
+    title: 'EtFlix',
+    category: 'Frontend · Media discovery',
+    year: '2026',
+    role: 'Frontend developer',
     description:
-      'A CLI and daemon that watches your codebase and drafts context-aware commits, tests, and docs from your diffs.',
-    tech: ['Rust', 'TypeScript', 'Local LLM'],
-    outcome: 'Adopted by 1.2k developers in the first quarter.',
-    href: '#', // TODO
-    hue: 34,
+      'A responsive movie and series discovery interface with catalog search, genre and year filters, pagination, and a video-player UI.',
+    tech: ['React', 'JavaScript', 'GSAP', 'TMDB API'],
+    outcome: 'Authentication and streaming are currently interface-level features.',
+    href: 'https://github.com/Ab-xo/EtFlix',
+    hue: 202,
+  },
+  {
+    id: 'siramap',
+    index: '05',
+    title: 'Siramap',
+    category: 'AI application · Career tools',
+    year: '2026',
+    role: 'Full-stack project developer',
+    description:
+      'A resume-analysis project designed to help candidates understand how clearly their resume communicates fit for a specific role.',
+    tech: ['React', 'JavaScript', 'AI / LLM integration'],
+    outcome: 'A practical job-seeker workflow, with role-specific resume feedback.',
+    href: 'https://github.com/Ab-xo/ai-resume-analyzer',
+    hue: 24,
+  },
+  {
+    id: 'web-scraper-toolkit',
+    index: '06',
+    title: 'Web Scraper Toolkit',
+    category: 'Full-stack · Automation',
+    year: '2026',
+    role: 'Full-stack developer',
+    description:
+      'A web-scraping platform combining an API backend and a browser-based interface for configurable extraction workflows.',
+    tech: ['Python', 'FastAPI', 'Playwright', 'React', 'Tailwind CSS'],
+    outcome: 'Built as a portfolio project; review the repository for implementation details.',
+    href: 'https://github.com/Ab-xo/web-scraper-toolkit',
+    hue: 192,
+  },
+  {
+    id: 'admas-blog',
+    index: '07',
+    title: 'Admas Collaborative Blog',
+    category: 'Full-stack · Collaboration',
+    year: '2026',
+    role: 'Student project developer',
+    description:
+      'A collaborative publishing platform for the university community, built to improve communication and shared publishing.',
+    tech: ['React', 'Node.js', 'MongoDB', 'AI-assisted writing'],
+    outcome: 'Final-year project at Admas University.',
+    href: 'https://github.com/Ab-xo/Fullstack-Collaborative-Blogging-Platform-for-Admas-Univeristy',
+    hue: 340,
   },
 ]
 

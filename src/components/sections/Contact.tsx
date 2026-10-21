@@ -37,6 +37,13 @@ export function Contact() {
           {site.email}
           <span className="block h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
         </a>
+        <a
+          href={`tel:${site.phone}`}
+          className="group font-mono text-sm text-muted transition-colors hover:text-accent"
+        >
+          {site.phone}
+          <span className="block h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
+        </a>
       </div>
     </section>
   )

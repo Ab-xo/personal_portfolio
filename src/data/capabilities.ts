@@ -1,7 +1,4 @@
-// -----------------------------------------------------------------------------
-// CAPABILITIES — grouped skills. TODO: tune to Abraham's real stack.
-// Shown as an editorial index, not a logo soup.
-// -----------------------------------------------------------------------------
+// Skills and tools listed in Abraham's CV.
 
 export type Capability = {
   index: string
@@ -12,35 +9,35 @@ export type Capability = {
 
 export const capabilities = {
   eyebrow: 'Capabilities',
-  title: 'What I bring to the table',
+  title: 'Technical capabilities',
   groups: [
     {
       index: '01',
-      area: 'AI & Machine Learning',
+      area: 'Languages & full-stack',
       summary:
-        'Building and shipping applied ML — from retrieval and evaluation to agentic workflows and inference at scale.',
-      stack: ['PyTorch', 'Transformers', 'RAG', 'LangGraph', 'Evals', 'Vector DBs'],
+        'Build responsive web products across frontend, backend, and database layers using a broad software engineering foundation.',
+      stack: ['TypeScript', 'JavaScript', 'Python', 'Java', 'C++', 'PHP / Laravel', 'React', 'Next.js', 'Node.js', 'Express', 'Tailwind CSS'],
     },
     {
       index: '02',
-      area: 'Software Engineering',
+      area: 'APIs & databases',
       summary:
-        'Designing resilient backends and APIs with a bias for clarity, observability, and boring reliability.',
-      stack: ['TypeScript', 'Python', 'Rust', 'PostgreSQL', 'Redis', 'gRPC'],
+        'Design and integrate APIs, authentication, and database-backed services with clear interfaces and practical documentation.',
+      stack: ['REST', 'FastAPI', 'OpenAPI / Swagger', 'Postman', 'MongoDB', 'MySQL', 'JWT / OAuth'],
     },
     {
       index: '03',
-      area: 'Frontend & Interaction',
+      area: 'AI & data',
       summary:
-        'Crafting fast, accessible interfaces with motion that clarifies rather than decorates.',
-      stack: ['React', 'Vite', 'Tailwind', 'GSAP', 'WebGL', 'Framer'],
+        'Applied ML for forecasting, computer vision, and AI-assisted workflows, supported by data preparation and evaluation.',
+      stack: ['PyTorch', 'scikit-learn', 'pandas', 'NumPy', 'SciPy', 'Statsmodels', 'RAG', 'LLM integration', 'Computer vision'],
     },
     {
       index: '04',
-      area: 'Systems & Delivery',
+      area: 'Engineering & delivery',
       summary:
-        'Owning the path to production — infra, CI, and the feedback loops that keep quality high.',
-      stack: ['Docker', 'AWS', 'Terraform', 'GitHub Actions', 'Observability'],
+        'Prepare, automate, test, and debug applications with collaborative development and delivery practices.',
+      stack: ['Docker', 'CI/CD', 'Git & GitHub', 'Linux', 'Bash', 'Cloud infrastructure', 'Testing', 'Web scraping & ETL', 'Streamlit', 'Agile / Scrum'],
     },
   ] satisfies Capability[],
 }

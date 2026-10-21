@@ -1,7 +1,4 @@
-// -----------------------------------------------------------------------------
-// EXPERIENCE / LEARNING JOURNEY — a real sequence, so numbered markers are
-// justified here. TODO: replace with Abraham's real timeline.
-// -----------------------------------------------------------------------------
+// Experience and education timeline, based on Abraham's CV.
 
 export type Milestone = {
   index: string
@@ -13,47 +10,31 @@ export type Milestone = {
 
 export const journey = {
   eyebrow: 'Journey',
-  title: 'The path so far',
+  title: 'Experience & education',
   milestones: [
     {
       index: '01',
-      period: '2021',
-      title: 'Started building for the web',
-      org: 'Self-taught → first products',
+      period: '2022 – Present',
+      title: 'Freelance Full-Stack Developer',
+      org: 'Self-employed · Addis Ababa, Ethiopia',
       detail:
-        'Fell for the loop of idea → code → something real people use. Shipped my first full-stack apps and never looked back.',
+        'Build full-stack web applications with React, Next.js, TypeScript, Node.js, Express, MongoDB, and MySQL. Recent work includes commerce, publishing, and business systems.',
     },
     {
       index: '02',
-      period: '2022',
-      title: 'Went deep on backend systems',
-      org: 'Software Engineer',
+      period: '2022 – March 2026',
+      title: 'BSc Computer Science',
+      org: 'Admas University · Addis Ababa, Ethiopia',
       detail:
-        'Learned to make things reliable — databases, queues, APIs, and the discipline of code that survives production.',
+        'Graduated with a 3.87 / 4.00 CGPA. Final-year project: a collaborative platform for improving university communication.',
     },
     {
       index: '03',
-      period: '2023',
-      title: 'Crossed into applied ML',
-      org: 'AI Engineer',
+      period: 'May 2026 – Present',
+      title: 'Intelligent Data & AI Engineering',
+      org: 'Qiyas Advanced Digital Skills · Addis Ababa University',
       detail:
-        'Moved from consuming models to building around them: retrieval, evaluation, and serving pipelines for real workloads.',
-    },
-    {
-      index: '04',
-      period: '2024',
-      title: 'Agentic systems & tooling',
-      org: 'Founding / Lead Engineer',
-      detail:
-        'Built tool-using agents with guardrails and the developer tooling to keep them observable and trustworthy.',
-    },
-    {
-      index: '05',
-      period: '2025 →',
-      title: 'Product-grade AI, end to end',
-      org: 'Independent',
-      detail:
-        'Now I take intelligent products from data pipeline to pixel — the full arc, with craft at every layer.',
+        'Advanced training in data and AI engineering, including supervised learning, time-series forecasting, deep learning, LLMs, retrieval-augmented generation, and agentic AI.',
     },
   ] satisfies Milestone[],
 }

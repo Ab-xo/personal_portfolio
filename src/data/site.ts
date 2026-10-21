@@ -1,37 +1,34 @@
 // -----------------------------------------------------------------------------
-// SITE CONTENT — realistic placeholders. TODO: replace with Abraham's real data.
-// Everything user-facing lives in src/data/* so copy can be swapped without
-// touching component code.
+// Portfolio content, grounded in Abraham's CV and public project work.
 // -----------------------------------------------------------------------------
 
 export const site = {
   name: 'Abraham',
-  // TODO: replace with your real last name / handle
-  fullName: 'Abraham Tesfaye',
-  role: 'AI + Software Engineer',
+  fullName: 'Abraham Gebeyehu',
+  role: 'Computer Scientist · Full-Stack Software Engineer · AI / ML Engineer',
   location: 'Addis Ababa, ET',
-  // TODO: real timezone label
-  timezone: 'GMT+3',
-  email: 'hello@abraham.dev', // TODO: real email
-  availability: 'Open to select 2026 collaborations',
+  timezone: 'EAT',
+  email: 'gebeyehuabraham19@gmail.com',
+  phone: '+251984876850',
+  availability: 'Open to full-time roles and freelance projects',
 
   // Hero headline is intentionally split into lines for the staggered reveal.
-  heroLines: ['Engineering', 'intelligent', 'software.'],
+  heroLines: ['Full-stack', 'software,', 'built to ship.'],
   heroStatement:
-    'I build production AI systems and the interfaces that make them feel effortless — where software engineering, machine learning, and design converge.',
+    'I build useful web products end to end, and bring data and AI into the parts of a product where they make a real difference.',
 
   socials: [
-    { label: 'GitHub', href: 'https://github.com/' }, // TODO
-    { label: 'LinkedIn', href: 'https://linkedin.com/in/' }, // TODO
-    { label: 'X', href: 'https://x.com/' }, // TODO
-    { label: 'Email', href: 'mailto:hello@abraham.dev' }, // TODO
+    { label: 'GitHub', href: 'https://github.com/Ab-xo' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/abraham-gebeyehu-builds' },
+    { label: 'Hugging Face', href: 'https://huggingface.co/Ab-xodev' },
+    { label: 'Email', href: 'mailto:gebeyehuabraham19@gmail.com' },
   ],
 } as const
 
 export const nav = [
   { label: 'Work', target: '#work' },
   { label: 'Capabilities', target: '#capabilities' },
-  { label: 'Journey', target: '#journey' },
+  { label: 'Experience', target: '#journey' },
   { label: 'About', target: '#about' },
   { label: 'Contact', target: '#contact' },
 ] as const
@@ -40,44 +37,55 @@ export const nav = [
 export const introStatement = {
   eyebrow: 'Introduction',
   lines: [
-    'I treat models as materials —',
-    'shaping them into products people trust,',
-    'and interfaces that disappear into the work.',
+    'I work from the data layer',
+    'through the API and interface,',
+    'to a product people can use.',
   ],
-  body: "For the last few years I've worked across the full stack of intelligent software: training and serving models, designing the systems around them, and crafting the front-end experiences that make them usable. I care about latency you can feel, interfaces that respect attention, and code that survives contact with production.",
+  body: 'Since 2022, I have built full-stack applications as a freelance developer and student project developer. My recent work spans React and Node.js products, Python data workflows, demand forecasting, computer vision, and AI-assisted resume analysis.',
 }
 
 // AI + Software Engineering feature block
 export const aiFocus = {
   eyebrow: 'AI Engineering',
   title: 'From model to product',
-  body: 'I work end-to-end on applied AI — retrieval systems, evaluation harnesses, agentic workflows, and the latency-sensitive serving layer underneath. The interesting problems live where the model meets the product surface.',
+  body: 'I build practical AI and data features around real product needs: forecasting, computer vision, resume analysis, and the full-stack interfaces that make those systems usable.',
   pillars: [
     {
       k: 'Applied ML',
-      v: 'RAG pipelines, fine-tuning, evaluation-driven iteration, and inference optimization for real workloads.',
+      v: 'Forecasting, deep learning, computer vision, and model evaluation using Python and PyTorch.',
     },
     {
-      k: 'Agentic systems',
-      v: 'Tool-using agents with guardrails, deterministic fallbacks, and observability built in from day one.',
+      k: 'AI applications',
+      v: 'Resume analysis, role-focused feedback, retrieval-augmented generation, and LLM integration for focused user workflows.',
     },
     {
       k: 'Product surface',
-      v: 'Streaming UIs, optimistic states, and interaction models that make probabilistic systems feel dependable.',
+      v: 'React and Next.js interfaces connected to APIs, databases, and deployed data applications.',
     },
   ],
 }
 
-// Creative-technology experiments — smaller, exploratory pieces.
+// Proposed products are explicitly separated from shipped work.
 export const experiments = {
-  eyebrow: 'Experiments',
-  title: 'Creative technology',
-  body: 'Nights-and-weekends explorations in shaders, generative systems, and interaction design. Where I test ideas before they earn their way into real products.',
+  eyebrow: 'Proposed work',
+  title: 'Ideas worth building next',
+  body: 'These are product concepts, not shipped projects. Each grows from work already represented in my portfolio and targets a practical user need.',
   items: [
-    { name: 'Flow fields', tag: 'WebGL / GLSL', year: '2025' },
-    { name: 'Latent atlas', tag: 'Embeddings / three.js', year: '2025' },
-    { name: 'Type in motion', tag: 'GSAP / SVG', year: '2024' },
-    { name: 'Signal synth', tag: 'Web Audio', year: '2024' },
+    {
+      name: 'Siramap Career Workspace',
+      audience: 'Job seekers',
+      description: 'Extend resume-to-role feedback into a private application tracker with tailored resume versions, interview preparation, and clear next steps for each opportunity.',
+    },
+    {
+      name: 'Freelance Project Desk',
+      audience: 'Independent developers',
+      description: 'A lightweight client workspace for intake, project scope, proposals, milestones, approvals, and invoice status, designed to reduce coordination overhead.',
+    },
+    {
+      name: 'RetailPulse Stock Planner',
+      audience: 'Small retailers',
+      description: 'Build on demand forecasting with explainable reorder suggestions, simple sales imports, and inventory alerts for small businesses with limited analytics support.',
+    },
   ],
 }
 
@@ -85,22 +93,35 @@ export const about = {
   eyebrow: 'About',
   title: 'Abraham',
   paragraphs: [
-    'I’m an AI and software engineer focused on the space between research and product. I like problems that need both a model that works and an interface that earns trust.',
-    'My background spans backend systems, applied machine learning, and front-end craft — which means I can carry an idea from a data pipeline all the way to the pixels a user touches.',
-    'When I’m not shipping, I’m usually deep in a shader experiment or rebuilding something just to understand how it really works.',
+    'I am a computer scientist, full-stack software engineer, and AI / ML engineer based in Addis Ababa, Ethiopia. I graduated with a BSc in Computer Science from Admas University in March 2026.',
+    'My work combines TypeScript, React, Next.js, Node.js, Python, and databases. I enjoy carrying a project from data preparation and API design to a responsive, usable interface.',
+    'I am currently taking the Advanced Digital Skills program in Intelligent Data & AI Engineering at Addis Ababa University through Qiyas.',
   ],
-  // TODO: swap for real numbers
   stats: [
-    { k: 'Years building', v: '5+' },
-    { k: 'Products shipped', v: '20+' },
-    { k: 'Models in prod', v: '12' },
-    { k: 'Coffee : commits', v: '1 : 1' },
+    { k: 'Computer Science', v: 'BSc' },
+    { k: 'CGPA', v: '3.87 / 4.00' },
+    { k: 'Based in', v: 'Addis Ababa' },
   ],
+  education: [
+    {
+      qualification: 'BSc in Computer Science',
+      institution: 'Admas University · Addis Ababa',
+      detail: 'Graduated March 2026 · CGPA 3.87 / 4.00',
+    },
+    {
+      qualification: 'Intelligent Data & AI Engineering',
+      institution: 'Qiyas Advanced Digital Skills · Addis Ababa University',
+      detail: 'May 2026 – Present',
+    },
+  ],
+  tools: ['Claude Code', 'Cursor', 'ChatGPT', 'Gemini', 'Postman', 'OpenAPI / Swagger', 'Docker', 'Git & GitHub', 'Linux', 'Bash', 'CI/CD'],
+  languages: ['Amharic', 'English'],
+  interests: ['Video games', 'AI research', 'Travel', 'Hackathons', 'Open source'],
 }
 
 export const contact = {
   eyebrow: 'Contact',
   title: "Let's build something",
-  body: 'Have a product that needs intelligence, or an interface that needs craft? I take on a small number of collaborations each year.',
-  cta: 'Start a conversation',
+  body: 'I am interested in full-time software engineering opportunities and freelance work across full-stack development, AI applications, and data products.',
+  cta: 'Discuss a project',
 }

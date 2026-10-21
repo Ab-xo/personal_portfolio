@@ -33,7 +33,7 @@ export function Nav() {
           <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
         </a>
 
-        <ul className="hidden items-center gap-9 md:flex">
+        <ul className="hidden items-center gap-6 lg:gap-9 lg:flex">
           {nav.map((item, i) => (
             <li key={item.target}>
               <a
@@ -52,16 +52,15 @@ export function Nav() {
 
         <a
           href="#contact"
-          className="gold-border hidden min-h-11 items-center gap-2 rounded-full border border-line px-4 text-xs tracking-wide text-muted transition-colors duration-300 hover:border-accent hover:text-accent md:inline-flex"
+          className="accent-border hidden min-h-11 items-center gap-2 rounded-sm border border-line px-4 text-xs tracking-wide text-muted transition-colors duration-300 hover:border-accent hover:text-accent lg:inline-flex"
         >
           <span aria-hidden className="relative z-10 h-1.5 w-1.5 rounded-full bg-accent" />
           <span className="relative z-10">{site.availability}</span>
-          {site.availability}
         </a>
 
         {/* Mobile toggle */}
         <button
-          className="flex min-h-11 min-w-11 items-center justify-center md:hidden"
+          className="flex min-h-11 min-w-11 items-center justify-center lg:hidden"
           aria-expanded={open}
           aria-label={open ? 'Close menu' : 'Open menu'}
           onClick={() => setOpen((v) => !v)}
@@ -82,7 +81,7 @@ export function Nav() {
 
       {/* Mobile menu */}
       <div
-        className={`overflow-hidden border-t border-line bg-bg/95 backdrop-blur-md transition-[max-height] duration-500 md:hidden ${
+        className={`overflow-hidden border-t border-line bg-bg/95 backdrop-blur-md transition-[max-height] duration-500 lg:hidden ${
           open ? 'max-h-96' : 'max-h-0 border-t-transparent'
         }`}
       >
